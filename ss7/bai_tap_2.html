@@ -40,11 +40,11 @@
         let from = document.getElementById("from").value;
         let to = document.getElementById("to").value;
         let result = 0;
-        if (from === "VND" && to === "USD") {
+        if (from === "1" && to === "2") {
             result = amount / 23000;
-        } else if (from === "USD" && to === "VND") {
+        } else if (from === "2" && to === "1") {
             result = amount * 23000;
-        } else if (from === "VND" && to === "VND") {
+        } else if (from === "1" && to === "1") {
             result = amount;
         } else {
             result = amount

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng máy tính</title>
+</head>
+<body>
+<form>
+    <tr>
+        <td><input type="number" id="number1"> </td>
+        <td><input type="number" id="number2"> </td>
+    </tr>
+    <tr>
+        <td><button onclick="add()"> Addition (+)</button> </td>
+        <td><button onclick="sub()"> Subtraction (-)</button> </td>
+        <td><button onclick="mul()"> Multiplication (*)</button> </td>
+        <td><button onclick="div()"> Division (/)</button> </td>
+    </tr>
+</form>
+<script>
+    function add() {
+     let number1 = +document.getElementById("number1").value ;
+     let number2 = +document.getElementById("number2").value ;
+     let result = number1 + number2 ;
+     alert("result = " + result);
+    }
+    function sub() {
+        let number1 = +document.getElementById("number1").value ;
+        let number2 = +document.getElementById("number2").value ;
+        let result = number1 - number2 ;
+        alert("result = " + result);
+    }
+    function mul() {
+        let number1 = +document.getElementById("number1").value ;
+        let number2 = +document.getElementById("number2").value ;
+        let result = number1 * number2 ;
+        alert("result = " + result);
+    }
+    function div() {
+        let number1 =+document.getElementById("number1").value ;
+        let number2 = +document.getElementById("number2").value ;
+        let result = number1 / number2 ;
+        alert("result = " + result);
+    }
+</script>
+</body>
+</html>
