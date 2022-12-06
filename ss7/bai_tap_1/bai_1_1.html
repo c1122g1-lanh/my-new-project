@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính điểm trung bình và tổng của 3 môn ly hoa sinh</title>
+<body>
+<script>
+    let ly = (+prompt("nhập điểm vật lý"));
+    let hoa = (+prompt("nhập điểm hoá"));
+    let sinh = (+prompt("nhập điểm sinh"));
+    if ((ly>=0 && ly <=100)&&(hoa>=0 && hoa <=100)&&(hoa>=0 && hoa <=100)) {
+        let dtb = (ly + hoa + sinh) / 3;
+        let tong = ly + hoa + sinh;
+        document.write("Điểm trung bình" + dtb + "<br>");
+        document.write("Tổng là" + tong);
+    } else {
+        document.write('Nhập sai điểm')
+    }
+</script>
+</body>
+</html>
