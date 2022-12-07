@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính đơn giản</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td colspan="4">
+            <input id="window" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="inputNumber(1)">1</button> </td>
+        <td><button onclick="inputNumber(2)">2</button> </td>
+        <td><button value="">3</button> </td>
+        <td><button onclick="inputNumber('+')">+</button> </td>
+    </tr>
+    <tr>
+        <td><button value="">4</button> </td>
+        <td><button value="">5</button> </td>
+        <td><button value="">6</button> </td>
+        <td><button value="">-</button> </td>
+    </tr>
+    <tr><td><button value="">7</button> </td>
+        <td><button value="">8</button> </td>
+        <td><button value="">9</button> </td>
+        <td><button value="">*</button> </td>
+    </tr>
+    <tr>
+        <td><button value="">C</button> </td>
+        <td><button value="">0</button> </td>
+        <td><button onclick="calculator()">=</button> </td>
+        <td><button value="">/</button> </td>
+    </tr>
+</table>
+<script>
+    function inputNumber(number) {
+       document.getElementById("window").value += number;
+    }
+    function calculator() {
+       let window = document.getElementById("window").value;
+       alert(eval(window));
+    }
+</script>
+</body>
+</html>
