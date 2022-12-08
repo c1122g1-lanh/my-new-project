@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi suất</title>
+</head>
+<body>
+<script>
+    let soTien = +prompt("nhập số tiền gửi");
+    let thang = +prompt("nhập tháng");
+    let laiSuat = +prompt("lãi suất năm");
+    let tienLai;
+    let nam=thang/12;
+    tienLai = soTien*(Math.pow((1+laiSuat),nam));
+    alert(tienLai);
+</script>
+</body>
+</html>

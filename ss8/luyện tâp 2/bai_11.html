@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let thuNhapTinhThue = +prompt("nhập tiền thu nhập tháng");
+    let thueThuNhap;
+    if (thuNhapTinhThue>=0 && thuNhapTinhThue<=5000000){
+        thueThuNhap = thuNhapTinhThue*5/100;
+        alert("thuế thu nhập cá nhân là = " + thueThuNhap);
+    }else if (thuNhapTinhThue>=0 && thuNhapTinhThue<=10000000){
+        thueThuNhap = thuNhapTinhThue*10/100 - 250000;
+        alert("thuế thu nhập cá nhân là = " + thueThuNhap);
+    }else if (thuNhapTinhThue>=0 && thuNhapTinhThue<=18000000){
+        thueThuNhap = thuNhapTinhThue*15/100 - 750000;
+        alert("thuế thu nhập cá nhân là = " + thueThuNhap);
+    }else if (thuNhapTinhThue>=0 && thuNhapTinhThue<=32000000){
+        thueThuNhap = thuNhapTinhThue*20/100 - 1650000;
+        alert("thuế thu nhập cá nhân là = " + thueThuNhap);
+    }else if (thuNhapTinhThue>=0 && thuNhapTinhThue<=52000000){
+        thueThuNhap = thuNhapTinhThue*25/100 - 3250000;
+        alert("thuế thu nhập cá nhân là = " + thueThuNhap);
+    }else if (thuNhapTinhThue>=0 && thuNhapTinhThue<=80000000){
+        thueThuNhap = thuNhapTinhThue*30/100 - 5850000;
+        alert("thuế thu nhập cá nhân là = " + thueThuNhap);
+    }else if (thuNhapTinhThue>=0 && thuNhapTinhThue>80000000){
+        thueThuNhap = thuNhapTinhThue*35/100 - 9850000;
+        alert("thuế thu nhập cá nhân là = " + thueThuNhap);
+    }else alert("người dùng nhập sai = ")
+</script>
+</body>
+</html>

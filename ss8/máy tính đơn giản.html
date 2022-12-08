@@ -14,34 +14,39 @@
     <tr>
         <td><button onclick="inputNumber(1)">1</button> </td>
         <td><button onclick="inputNumber(2)">2</button> </td>
-        <td><button value="">3</button> </td>
-        <td><button onclick="inputNumber('+')">+</button> </td>
+        <td><button onclick="inputNumber(3)">3</button> </td>
+        <td><button onclick="inputNumber('+')">+</button></td>
     </tr>
     <tr>
-        <td><button value="">4</button> </td>
-        <td><button value="">5</button> </td>
-        <td><button value="">6</button> </td>
-        <td><button value="">-</button> </td>
-    </tr>
-    <tr><td><button value="">7</button> </td>
-        <td><button value="">8</button> </td>
-        <td><button value="">9</button> </td>
-        <td><button value="">*</button> </td>
+        <td><button onclick="inputNumber(4)">4</button> </td>
+        <td><button onclick="inputNumber(5)">5</button> </td>
+        <td><button onclick="inputNumber(6)">6</button> </td>
+        <td><button onclick="inputNumber('-')">-</button> </td>
     </tr>
     <tr>
-        <td><button value="">C</button> </td>
-        <td><button value="">0</button> </td>
-        <td><button onclick="calculator()">=</button> </td>
-        <td><button value="">/</button> </td>
+        <td><button onclick="inputNumber(7)">7</button> </td>
+        <td><button onclick="inputNumber(8)">8</button> </td>
+        <td><button onclick="inputNumber(9)">9</button> </td>
+        <td><button onclick="inputNumber('*')">*</button> </td>
+    </tr>
+    <tr>
+        <td><button onclick="inputNumber('C')">C</button> </td>
+        <td><button onclick="inputNumber(0)">0</button> </td>
+        <td><button onclick="calculator('=')">=</button> </td>
+        <td><button onclick="inputNumber('/')">/</button> </td>
     </tr>
 </table>
+<p>hello</p>
+<input type="text" value="hello">
 <script>
     function inputNumber(number) {
        document.getElementById("window").value += number;
     }
     function calculator() {
-       let window = document.getElementById("window").value;
-       alert(eval(window));
+       let window = document.getElementById("window");
+       console.log(window)
+       let value= eval(window.value)
+       window.value = value;
     }
 </script>
 </body>

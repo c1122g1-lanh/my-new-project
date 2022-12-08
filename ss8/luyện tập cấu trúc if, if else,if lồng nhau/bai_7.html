@@ -5,8 +5,23 @@
     <title>bai_7</title>
 </head>
 <body>
+<form>
+    <img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" style="width: 30%"/>
+    <p>click button below to move the imaga to right</p>
+    <input type="button" value="clck me" onclick="moverRight();">
+</form>
 <script>
-    let
+    let imobj = null;
+    imgObi = document.getElementById('myImage');
+    function init() {
+        imgObi= document.getElementById('myimage');
+        imgObi.style.position='relative';
+        imgObi.style.left='0px'
+    }
+    function moverRight() {
+        imgObi.style.left= parseInt(imgObi.style.left)+10+'px';
+    }
+    window.onload=init;
 </script>
 </body>
 </html>
