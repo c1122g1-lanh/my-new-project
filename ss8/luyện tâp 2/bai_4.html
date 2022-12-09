@@ -8,8 +8,11 @@
 <script>
     let a = +prompt("nhập cạnh a");
     let b = +prompt("nhập cạnh b");
-    let S = a * b;
-    alert("diện tích hình chữ nhật =" + S);
+    let dienTich = a * b;
+    if (a > 0 && b>0){
+        alert("diện tích hình chữ nhật =" + dienTich);
+    }else
+        alert("người dùng nhập sai");
 </script>
 </body>
 </html>

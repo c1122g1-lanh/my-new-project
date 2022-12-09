@@ -9,18 +9,18 @@
     let a = +prompt("nhập a");
     let b = +prompt("nhập b");
     let c = +prompt("nhập c");
-    let delta = b*b - 4*a*c;
+    let delta = b * b - 4 * a * c;
     let x1;
     let x2;
-    if (delta>0){
-        x1=(-b + Math.sqrt(delta))/(2*a);
-        x2=(-b - Math.sqrt(delta))/(2*a);
+    if (delta > 0) {
+        x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        x2 = (-b - Math.sqrt(delta)) / (2 * a);
         alert("phương trình có nghiệm x1=" + x1);
         alert("phương trình có nghiệm x2=" + x2);
-    }else if (delta==0){
-        x1=x2= -b/2*a;
+    } else if (delta == 0) {
+        x1 = x2 = -b / 2 * a;
         alert("phương trình có 1 nghiệm x1=x2=" + x1 + x2);
-    }else alert("phương trình vô nghiệm")
+    } else alert("phương trình vô nghiệm");
 </script>
 </body>
 </html>
