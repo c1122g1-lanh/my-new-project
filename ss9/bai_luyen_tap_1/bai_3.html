@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm 20 số đầu của dãy fibonacci</title>
+</head>
+<body>
+<script>
+    let x;
+    let count = 2;
+    let f1 = 0;
+    let f2 = 1;
+    document.write("dãy fibo là" + f1 + ',' + f2);
+    for (count = 3; count <= 20; count++) {
+        x = f1 + f2;
+        f1 = f2;
+        f2 = x;
+        document.write("," + x);
+    }
+
+</script>
+</body>
+</html>
