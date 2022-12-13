@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số nguyên âm</title>
+</head>
+<body>
+<script>
+    let array = [-1, -2, 3, 4, -5, -6, -7, 3];
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < 0) {
+            count++;
+            document.write(array[i]);
+        }
+    }
+    document.write("<br>");
+    document.write("số lượng số nguyên âm trong mảng là " + count);
+</script>
+</body>
+</html>

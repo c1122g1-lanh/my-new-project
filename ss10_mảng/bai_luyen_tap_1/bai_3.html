@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>trung bình các phần tử mảng</title>
+</head>
+<body>
+<script>
+    let numbers = [23, 1, 323, 455, 21, 78, 34, 300, 12, 65];
+    let max = numbers[0];
+    let i;
+    for (i = 0; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+        }
+    }
+    document.write('số ', max,);
+    document.write("<br>");
+    let aver;
+    let total = 0;
+    let count = 0;
+    for (i = 0; i < numbers.length; i++) {
+        total += numbers[i];
+        count++;
+    }
+    aver = total / count;
+    document.write("giá trị trung bình =" + aver);
+</script>
+</body>
+</html>
