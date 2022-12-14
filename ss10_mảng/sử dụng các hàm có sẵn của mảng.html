@@ -6,12 +6,32 @@
 </head>
 <body>
 <script>
-    // let myColor = ["Red", "Green", "White", "Black"];
-    // for (let i = 0; i < 5; i++) {
-    // }
-    // document.write(myColor);
-    let number = [0,2,5,4,6,8];
-    alert(number);
+    // bài1:
+    let myColor = ["Red", "Green", "White", "Black"];
+    for (let i = 0; i < 5; i++) {
+    }
+    alert(myColor);
+    // bài2:
+    let numbers = [0, 2, 5, 4, 6, 8];
+    let str;
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0 && numbers[i - 1] % 2 === 0) {
+            numbers.splice(i, 0, "-");
+        }
+        str = numbers.join(" ");
+    }
+    alert(str);
+    // bài 3:
+    let str = "The Quick Brown Fox";
+    let array = str.split("");
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == array[i].toUpperCase()) {
+            array[i] = array[i].toLowerCase();
+        } else {
+            array[i] = array[i].toUpperCase()
+        }
+    }
+    alert(array);
 
 
 </script>
