@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let numbers = [10];
+let v = +prompt("nhập giá trị cần kiểm tra");
+let i=0;
+let index;
+for (i=0; i<10; i++){
+    numbers[i] = +prompt("nhập số nguyên");
+}
+for (i=0; i<numbers.length; i++){
+    if (v === numbers[i]){
+       numbers.splice(i,1);
+        document.write(numbers);
+       }
+    }
+</script>
+</body>
+</html>

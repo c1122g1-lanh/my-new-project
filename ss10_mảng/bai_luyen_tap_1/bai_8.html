@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [10];
+    for (let i = 0; i < 10; i++) {
+        numbers[i] = +prompt("nhập giá trị số nguyên")
+    }
+    for (let i = 1; i <= 10; i++) {
+        numbers.sort(function (a, b) {
+            return a - b;
+        });
+    }
+    alert(numbers);
+</script>
+</body>
+</html>
