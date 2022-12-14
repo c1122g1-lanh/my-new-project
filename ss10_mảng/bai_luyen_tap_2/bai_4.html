@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số trong chuỗi</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let n = +prompt("nhấp số lượng phần tử");
+    let count = 0;
+    let check = +prompt("nhập số cần đếm");
+    for (let i = 0; i < n; i++) {
+        array[i] = +prompt("nhập phần tử");
+        if (check === array[i]) {
+            count++;
+        }
+    }
+    document.write("tổng số " + check + " trong mảng là " + count);
+</script>
+</body>
+</html>

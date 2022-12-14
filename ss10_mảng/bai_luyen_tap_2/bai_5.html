@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra chuõi có giống nhau</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập chuỗi a");
+    let b = prompt("nhập chuỗi b");
+    let count = 0;
+    if (a.length === b.length) {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] == b[i]) {
+                count++;
+            } else {
+                document.write("khác nhau");
+                break;
+            }
+        }
+        if (count == b.length) {
+            document.write(" giống nhau");
+        }
+    } else
+        document.write("khác nhau");
+</script>
+</body>
+</html>

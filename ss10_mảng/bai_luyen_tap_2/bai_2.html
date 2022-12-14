@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo ngược</title>
+</head>
+<body>
+<script>
+    let array = ['c', 's', 'c', '2', '6', '1'];
+    let firts = 0;
+    let last = array.length - 1;
+    let str;
+    while (firts < last) {
+        let x = array[firts];
+        array[firts] = array[last];
+        array[last] = x;
+        firts++;
+        last--;
+        str = array.join("");
+    }
+    document.write(str);
+</script>
+</body>
+</html>
