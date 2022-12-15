@@ -6,17 +6,13 @@
 </head>
 <body>
 <script>
-    let array = [];
-    let n = +prompt("nhấp số lượng phần tử");
+    let str = "Nguyen_Minh_Lanh";
+    let array = str.split("");
     let count = 0;
-    let check = +prompt("nhập số cần đếm");
-    for (let i = 0; i < n; i++) {
-        array[i] = +prompt("nhập phần tử");
-        if (check === array[i]) {
-            count++;
-        }
+    for (let i = 0; i < array.length; i++) {
+        count++;
     }
-    document.write("tổng số " + check + " trong mảng là " + count);
+    document.write("tổng số ký tự trong chuỗi là " + count);
 </script>
 </body>
 </html>
