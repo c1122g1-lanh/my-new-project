@@ -6,16 +6,25 @@
 </head>
 <body>
 <script>
-    let numbers = [10];
-    for (let i = 0; i < 10; i++) {
-        numbers[i] = +prompt("nhập giá trị số nguyên")
+    let arr = [1, 3, 6, 4, 5, 8, 9, 7];
+    let lengthArr = arr.length;
+    let arrSort = [];
+    for (let i = 0; i < lengthArr; i++) {
+        let max = arr[0];
+        for (let j = 0; j < lengthArr; j++) {
+            if (arr[j] > max) {
+                max = arr[j];
+            }
+        }
+        arrSort.push(max);
+        for (let k = 0; k < lengthArr; k++) {
+            if (arr[k] == max) {
+                arr.splice(k, 1);
+            }
+        }
     }
-    for (let i = 1; i <= 10; i++) {
-        numbers.sort(function (a, b) {
-            return a - b;
-        });
-    }
-    alert(numbers);
+    alert("mảng sau sắp xếp là " + arrSort);
+
 </script>
 </body>
 </html>
