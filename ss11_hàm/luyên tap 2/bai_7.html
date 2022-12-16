@@ -9,7 +9,7 @@
     let a = +prompt("nhập");
     let b = +prompt("nhập");
 
-    function doiViTri(x, y) {
+    function changeLocation(x, y) {
         let array = [a, b];
         let c = array[0];
         array[0] = array[1];
@@ -17,7 +17,7 @@
         return array;
     }
 
-    alert(doiViTri(a, b));
+    alert(changeLocation(a, b));
 </script>
 </body>
 </html>

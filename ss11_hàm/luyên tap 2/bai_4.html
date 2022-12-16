@@ -8,15 +8,15 @@
 <script>
     let str = prompt("nhập ký tự");
 
-    function checkChat() {
+    function checkChat(a) {
         if (str * 0 == 0) {
             return true;
         }
         return false;
     }
 
-    checkChat();
-    if (checkChat()) {
+    checkChat(str);
+    if (checkChat(str)) {
         alert("true");
     } else {
         alert("false");

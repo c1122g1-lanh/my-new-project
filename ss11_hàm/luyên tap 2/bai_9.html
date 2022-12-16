@@ -14,7 +14,7 @@
     let check = prompt("nhập ký tự cần kiểm tra");
     let count = 0;
 
-    function kiemTra() {
+    function checkChat() {
         for (let i = 0; i < n; i++) {
             if (check === array[i]) {
                 count++;
@@ -24,8 +24,8 @@
         return false;
     }
 
-    kiemTra();
-    if (kiemTra()) {
+    checkChat();
+    if (checkChat()) {
         alert("ký tự " + check + " xuất hiện trong mảng = " + count + " lần");
     } else
         alert("-1");
