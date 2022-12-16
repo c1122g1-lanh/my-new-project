@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra 3 số nguyên</title>
+</head>
+<body>
+<script>
+    let x = prompt("nhap");
+    let y = prompt("nhap");
+    let z = prompt("nhap");
+
+    function checkInterger(a, b, c) {
+        let array = [a, b, c];
+        let min = array[0];
+        for (let i = 0; i < array.length; i++) {
+            if (min > array[i]) {
+                min = array[i];
+            }
+        }
+        return min;
+    }
+
+    alert(checkInterger(x, y, z));
+
+</script>
+</body>
+</html>

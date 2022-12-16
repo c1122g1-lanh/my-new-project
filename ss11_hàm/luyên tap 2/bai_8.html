@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đảo mảng số nguyên</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let n = +prompt("nhập sộ dài");
+    for (let i = 0; i < n; i++) {
+        array[i] = +prompt("nhập");
+    }
+    alert("mảng ban đầu là " + array);
+
+    function daoNguoc() {
+        let first = 0;
+        let last = n - 1;
+        while (first < last) {
+            let m = array[first];
+            array[first] = array[last];
+            array[last] = m;
+            first++;
+            last--;
+        }
+        return array;
+    }
+
+    alert("mảng sau đảo ngược là " + daoNguoc());
+</script>
+</body>
+</html>

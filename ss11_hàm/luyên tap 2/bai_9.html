@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra ký tự</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let n = +prompt("nhập số lượng ký tự trong mảng");
+    for (let i = 0; i < n; i++) {
+        array[i] = prompt("nhập phần tử");
+    }
+    let check = prompt("nhập ký tự cần kiểm tra");
+    let count = 0;
+
+    function kiemTra() {
+        for (let i = 0; i < n; i++) {
+            if (check === array[i]) {
+                count++;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    kiemTra();
+    if (kiemTra()) {
+        alert("ký tự " + check + " xuất hiện trong mảng = " + count + " lần");
+    } else
+        alert("-1");
+
+</script>
+</body>
+</html>

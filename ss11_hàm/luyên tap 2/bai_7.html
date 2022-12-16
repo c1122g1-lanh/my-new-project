@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đổi chổ</title>
+</head>
+<body>
+<script>
+    let a = +prompt("nhập");
+    let b = +prompt("nhập");
+
+    function doiViTri(x, y) {
+        let array = [a, b];
+        let c = array[0];
+        array[0] = array[1];
+        array[1] = c;
+        return array;
+    }
+
+    alert(doiViTri(a, b));
+</script>
+</body>
+</html>
