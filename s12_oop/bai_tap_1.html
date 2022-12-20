@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hình chữ nhật</title>
+</head>
+<body>
+<p id="ketQua"> kết quả</p>
+<canvas id="myHinhChuNhat" width="200px" height="100px"></canvas>
+<script>
+    class Hinhchunhat {
+        constructor(long, width) {
+            this.long = long;
+            this.width = width;
+        }
+
+        setLong(newLong) {
+            this.long = newLong;
+        }
+
+        setWidth(newWidth) {
+            this.width = newWidth;
+        }
+
+        getChuVi() {
+            return (this.long + this.width) * 2;
+        }
+
+        getDienTich() {
+            return this.long * this.width;
+        }
+    }
+
+    let long = +prompt("nhập chiều dài");
+    let width = +prompt("nhập chiều rộng");
+    let Hinhchunhat1 = new Hinhchunhat(long, width);
+    document.getElementById('ketQua').innerHTML = 'Diện tích là: ' + Hinhchunhat1.getChuVi() + '. Chu vi là: ' + Hinhchunhat1.getDienTich();
+    let canvas = document.getElementById('myHinhChuNhat');
+    let ctx = canvas.getContext('2d');
+    ctx.fillStyle = "#ff0000";
+    ctx.fillRect(0, 0, long, width);
+</script>
+</body>
+</html>
