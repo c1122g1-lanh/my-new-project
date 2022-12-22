@@ -18,39 +18,6 @@
         arrayB[i] = +prompt("nhập phần tử mảng B");
     }
     let arrayC = [];
-    // code loại bỏ những phần tử giống nhau;
-    // for (let i = 0; i < arrayA.length; i++) {
-    //     for (let j = i; j < arrayA.length; j++) {
-    //         if (i != j && arrayA[i] == arrayA[j]) {
-    //             arrayA.splice(j, 1);
-    //         }
-    //     }
-    // }
-    // for (let i = 0; i < arrayB.length; i++) {
-    //     for (let j = i; j < arrayB.length; j++) {
-    //         if (i != j && arrayB[i] == arrayB[j]) {
-    //             arrayB.splice(j, 1);
-    //         }
-    //     }
-    // }
-    // cách 1: dùng ham indexOf();
-    // if (arrayA.length >= arrayB.length) {
-    //     for (let i = 0; i < arrayA.length; i++) {
-    //         if ((arrayB.indexOf(arrayA[i]) == -1)) {
-    //             arrayC.push(arrayA[i]);
-    //         }
-    //     }
-    //     alert(arrayC);
-    // } else if (arrayA.length < arrayB.length) {
-    //     for (let i = 0; i < arrayB.length; i++) {
-    //         if ((arrayA.indexOf(arrayB[i]) == -1)) {
-    //             arrayC.push(arrayB[i]);
-    //         }
-    //     }
-    //     alert(arrayC);
-    // }
-    //    cách 2: thủ công
-
     if (arrayA.length < arrayB.length) {
         for (let i = 0; i < arrayB.length; i++) {
             let flag = true;
