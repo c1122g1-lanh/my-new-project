@@ -11,19 +11,22 @@
     let str2 = "adcaa";
     let array2 = str2.split("");
     let array3 = [];
-    for (let i =0; i< array1.length;i++){
-        let count = 0;
-        for (let j =0; j<array2.length; j++){
-           if (array1[i] == array2[j]){
-               count++;
-               array1.splice(i,1);
-               array2.splice(j,1);
-               break;
-           }
-        }if (count !== 0){
+    let count = 0;
+    for (let i = 0; i < array1.length; i++) {
+
+        for (let j = 0; j < array2.length; j++) {
+            if (array1[i] == array2[j]) {
+                count++;
+                array1.splice(i, 1);
+                array2.splice(j, 1);
+                break;
+            }
+        }
+        if (count !== 0) {
             array3.push(array1[i]);
         }
-    }alert(array3);
+    }
+    alert(array3);
 
 
 </script>
