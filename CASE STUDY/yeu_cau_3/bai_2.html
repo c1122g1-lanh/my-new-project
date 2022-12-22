@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tìm phần tử</title>
+</head>
+<body>
+<script>
+
+    let arrayA = [];
+    let nA = +prompt("nhập số lượng phần tử có trong mảng A");
+    for (let i = 0; i < nA; i++) {
+        arrayA[i] = +prompt("nhập phần tử mảng A");
+    }
+    let arrayB = [];
+    let nB = +prompt("nhập số lượng phần tử có trong mảng B");
+    for (let i = 0; i < nB; i++) {
+        arrayB[i] = +prompt("nhập phần tử mảng B");
+    }
+    let arrayC = [];
+    // code loại bỏ những phần tử giống nhau;
+    // for (let i = 0; i < arrayA.length; i++) {
+    //     for (let j = i; j < arrayA.length; j++) {
+    //         if (i != j && arrayA[i] == arrayA[j]) {
+    //             arrayA.splice(j, 1);
+    //         }
+    //     }
+    // }
+    // for (let i = 0; i < arrayB.length; i++) {
+    //     for (let j = i; j < arrayB.length; j++) {
+    //         if (i != j && arrayB[i] == arrayB[j]) {
+    //             arrayB.splice(j, 1);
+    //         }
+    //     }
+    // }
+    // cách 1: dùng ham indexOf();
+    // if (arrayA.length >= arrayB.length) {
+    //     for (let i = 0; i < arrayA.length; i++) {
+    //         if ((arrayB.indexOf(arrayA[i]) == -1)) {
+    //             arrayC.push(arrayA[i]);
+    //         }
+    //     }
+    //     alert(arrayC);
+    // } else if (arrayA.length < arrayB.length) {
+    //     for (let i = 0; i < arrayB.length; i++) {
+    //         if ((arrayA.indexOf(arrayB[i]) == -1)) {
+    //             arrayC.push(arrayB[i]);
+    //         }
+    //     }
+    //     alert(arrayC);
+    // }
+    //    cách 2: thủ công
+
+    if (arrayA.length < arrayB.length) {
+        for (let i = 0; i < arrayB.length; i++) {
+            let flag = true;
+            for (let j = 0; j < arrayA.length; j++) {
+                if (arrayB[i] === arrayA[j]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag === true) {
+                arrayC.push(arrayB[i])
+            }
+        }
+    } else if (arrayA.length >= arrayB.length) {
+        for (let i = 0; i < arrayA.length; i++) {
+            let flag = true;
+            for (let j = 0; j < arrayB.length; j++) {
+                if (arrayA[i] === arrayB[j]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag === true) {
+                arrayC.push(arrayA[i])
+            }
+        }
+    }
+    alert(arrayC);
+
+</script>
+</body>
+</html>

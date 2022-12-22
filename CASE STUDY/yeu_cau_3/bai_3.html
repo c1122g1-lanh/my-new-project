@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [5, 2, 5];
+    let b = [6, 3, 4];
+    let c = [];
+    for (let i = 0; i < a.length; i++) {
+        let result = a[i] / b[i];
+        c.push(result);
+    }
+    let index = 0;
+    let max = c[0];
+    for (let i = 0; i < c.length; i++) {
+        if (c[i] > max) {
+            max = c[i];
+        }
+        index = c.indexOf(max);
+    }
+    alert(index);
+</script>
+
+</body>
+</html>

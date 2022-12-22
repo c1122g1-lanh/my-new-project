@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính thuê thu nhâp</title>
+</head>
+<body>
+<script>
+    let salary = +prompt("nhập tiền lương");
+    let thueThuNhapCaNhan = 0;
+    let luongRong = 0;
+    if (salary >= 15000000) {
+        thueThuNhapCaNhan = salary * 0.2;
+        luongRong = salary - thueThuNhapCaNhan;
+        alert("Thuế thu nhập cá nhân = " + thueThuNhapCaNhan + " vnđ" + " và" + " lương thực nhận = " + luongRong + " vnđ");
+    } else if (salary >= 7000000) {
+        thueThuNhapCaNhan = salary * 0.1;
+        luongRong = salary - thueThuNhapCaNhan;
+        alert("Thuế thu nhập cá nhân = " + thueThuNhapCaNhan + " vnđ" + " và" + " lương thực nhận = " + luongRong + " vnđ")
+    } else if (salary > 0) {
+        thueThuNhapCaNhan = salary * 0.05;
+        luongRong = salary - thueThuNhapCaNhan;
+        alert("Thuế thu nhập cá nhân = " + thueThuNhapCaNhan + " vnđ" + " và" + " lương thực nhận = " + luongRong + " vnđ")
+    } else {
+        alert("Nhập sai");
+    }
+</script>
+</body>
+</html>

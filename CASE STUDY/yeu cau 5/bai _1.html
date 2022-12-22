@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = +prompt("nhập số lượng hàng");
+    let n = +prompt("nhập số lượng cột");
+    let array = [];
+    for (let i = 0; i < m; i++) {
+        array[i] = [];
+        for (let j = 0; j < n; j++) {
+            array[i][j] = +prompt("nhập phần tử");
+        }
+    }
+
+    function tinhTong(array) {
+        let tongCacSoChan = 0;
+        for (let i = 0; i < m; i++) {
+            for (let j = 0; j < n; j++) {
+                if (array[i][j] % 2 === 0) {
+                    tongCacSoChan += array[i][j];
+                }
+            }
+        }
+        return tongCacSoChan;
+    }
+
+    alert(tinhTong(array));
+
+</script>
+
+</body>
+</html>

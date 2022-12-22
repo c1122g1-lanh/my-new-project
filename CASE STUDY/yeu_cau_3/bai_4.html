@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhập số ra chữ</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhập số");
+    let newstr = "";
+    for (let i = 0; i < str.length; i++) {
+        switch (str[i]) {
+            case "0":
+                newstr += "không";
+                break;
+            case "1":
+                newstr += "một";
+                break;
+            case "2":
+                newstr += "hai";
+                break;
+            case "3":
+                newstr += "ba";
+                break;
+            case "4":
+                newstr += "bốn";
+                break;
+            case "5":
+                newstr += "năm";
+                break;
+            case "6":
+                newstr += "sáu";
+                break;
+            case "7":
+                newstr += "bảy";
+                break;
+            case "8":
+                newstr += "tám";
+                break;
+            case "9":
+                newstr += "chín";
+                break;
+        }
+    }
+    alert(newstr);
+
+</script>
+</body>
+</html>

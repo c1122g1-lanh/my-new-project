@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+    function isPrimeNumber() {
+        let count = 0;
+        let arrayNum = [];
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                let num = array[i][j];
+                let isPrime = true;
+                if (num < 2) {
+                    isPrime = false;
+                } else {
+                    for (let k = 2; k < num; k++) {
+                        if (num % k === 0) {
+                            isPrime = false;
+                            break;
+                        }
+                    }
+                }
+                if (isPrime) {
+                    count++;
+                    arrayNum.push(num);
+                }
+            }
+        }
+        alert(arrayNum);
+        return count;
+    }
+
+    alert(isPrimeNumber())
+</script>
+</body>
+</html>

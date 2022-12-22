@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tiền tố</title>
+</head>
+<body>
+<script>
+    let arrayA = [];
+    let n = +prompt("nhập số lượng phần tử mảng A");
+    for (let i = 0; i < n; i++) {
+        arrayA[i] = +prompt("nhập phẩn tử mảng A");
+    }
+    let arrayB = [];
+    for (let i = 0; i < n; i++) {
+        let sum = 0;
+        for (let j = 0; j <= i; j++) {
+            sum += arrayA[j];
+        }
+        arrayB.push(sum);
+    }
+    alert("mảng B là " + arrayB);
+</script>
+</body>
+</html>

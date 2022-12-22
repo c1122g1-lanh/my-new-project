@@ -2,9 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>vẽ hình sao</title>
 </head>
 <body>
+<script>
+    // bai 1:
+    // let n = +prompt("nhập n");
+    // let m = +prompt("nhập m");
+    // for (let x = 0; x < n; x++) {
+    //     for (let y = 0; y < m; y++) {
+    //         let khoangTrong = "&ensp;";
+    //         let sao = "*";
+    //         if (x === 0 || x === (n - 1)) {
+    //             document.write(sao);
+    //         } else if (y === 0 || y === (m - 1)) {
+    //             document.write(sao);
+    //         } else {
+    //             document.write(khoangTrong);
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+    // bai 2:
+    // let h = +prompt("nhập h");
+    // for (let x = 0; x < h; x++) {
+    //     let khoangTrong = "&ensp;";
+    //     let sao = "*";
+    //     for (let y = 0; y <= x; y++) {
+    //         if ((x < 2 || x === (h - 1))) {
+    //             document.write(sao);
+    //         } else if (y === 0 || y === x) {
+    //             document.write(sao);
+    //         } else {
+    //             document.write(khoangTrong);
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+    // bai 3:
+    // let h = +prompt("nhập h");
+    // let khoangTrong = "&ensp;";
+    // let sao = "*"
+    // for (let i=1; i<=h;i++){
+    //     for (let j = h; j>= i; j-- ){
+    //         document.write(khoangTrong);
+    //     }
+    //     for (let k = 1; k <=(i*2)-1;k++){
+    //         document.write(sao);
+    //     }document.write("<br>");
+    // }document.write("<br>");
+    // bai 4:
+    let h = +prompt("nhập h");
+    let khoangTrong = "&ensp;";
+    let sao = "*"
+    for (let i=1; i<=h;i++){
+        for (let j = h; j>= i; j-- ){
+            document.write(khoangTrong);
+        }
+        for (let k = 1; k <=(i*2)-1;k++){
+            if ((k===1 || k===(i*2)-1)|| i==5) {
+                document.write(sao);
+            }else {
+                document.write(khoangTrong);
+            }
+        }document.write("<br>");
+    }document.write("<br>");
 
+</script>
 </body>
 </html>
